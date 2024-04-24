@@ -7,15 +7,15 @@ It´s a web page that simulates the operation of the sale of some medicines, upd
 - :exclamation: Purchase of medicines.
 
 Datos para acceder a la pagina y hacer pruebas:  
-identificador: 60758487P 
+identificador: 60758487P   
 nombre: Pepa 
 
 identificador: 78933215K  
 nombre: Sandra  
 
-Referencia de los medicamentos:
-abcd12345678 Ibuprofeno 9.99 precio coste  
-abcd87654321 Megalevure 8.50 precio coste  
+Referencia de los medicamentos:  
+abcd12345678 Ibuprofeno 9.99 precio coste    
+abcd87654321 Megalevure 8.50 precio coste   
 efgh12345678 Paracetamol 9.50 precio coste  
 
 ## Contribution
