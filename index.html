@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Boostrap-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<!--Script de boostrap-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<!--Script JQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+	<!--Estilos-->
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+
+	<title>DrugStoreProject</title>
+
+</head>
+<body>
+	<!--Contenedor principal-->
+	<div class="container">
+		<div class="row vh-100 justify-content-center align-items-center">
+			<div class=" row  justify-content-center align-items-center bg-light border shadow">
+
+				<h1 class="text-center p-4">Farmacia Lda. Pepa Pérez</h1>
+				<!--Imágenes Logos-->
+				<div id="logos" class="col-auto text-center">
+					<div class="row"><img src="imagenes/logo_farmacia.png" class="img-fluid" alt="Logo Farmacia"></div>
+					<div class="row"><img src="imagenes/face_insta.png" class="img-fluid" alt="Logos Redes Sociales"></div>
+				</div>
+
+				<div id="espacio" class="col-auto text-center w-25">
+				</div>
+
+				<!--Zona botones y formulario de ingreso-->
+				<div id="derecha" class="col-auto text-center w-25">
+
+					<!--Bloque Ingreso-->	
+					<form id="formulario_datos">
+						<div id ="bloqueInicio" class="row">
+							<p class="fs-5">Introduce tu identificador y nombre para loguearte</p>
+							<input type="text" class="form-control col-12 mb-2 rounded-pill " id="identificador" name="identificador" placeholder="Identificador" />
+
+							<input type="text" class="form-control col-12  mb-2 rounded-pill" id="nombre" name="nombre" placeholder="Nombre" />
+
+							<button class="btn btn-primary col-12 mb-2 rounded-pill" type="button" id="ingresar">Ingresar</button>
+
+							<label id="errorUsuario" class="fs-6 error">Identificador y/o nombre incorrectos</label>
+						</div>
+					</form>
+
+					<!--Bloque de Ventas-->
+					<form id="formulario_ventas">
+						<div id ="bloqueVentas" class="row">
+							<p class="fs-5">Introduce el producto para su venta: </p>
+							<input type="text" class="form-control col-12 mb-2 rounded-pill " id="referencia" name="referencia" placeholder="Referencia" />
+
+							<input type="text" class="form-control col-12  mb-2 rounded-pill" id="cantidad" name="cantidad" placeholder="Cantidad" />
+
+							<button class="btn btn-primary col-12 mb-2 rounded-pill" type="button" id="enviarVenta">Enviar</button>
+
+						</div>
+					</form>
+
+					<!--Bloque de Compras-->
+					<form id="formulario_compras">
+						<div id ="bloqueCompras" class="row">
+							<p class="fs-5">Introduce la referencia del producto para su compra: </p>
+							<input type="text" class="form-control col-12 mb-2 rounded-pill " id="referenciaCompra" name="referenciaCompra" placeholder="Referencia" />
+
+							<button class="btn btn-primary col-12 mb-2 rounded-pill" type="button" id="comprobarCompra">Enviar</button>
+
+						</div>
+					</form>
+
+					<!--Modificacion de producto-->
+					<form id="formulario_mod">
+						<div id ="bloqueMod" class="row">
+							<p class="fs-5">Rellena los siguientes datos para la compra de un producto ya existente: </p>
+							<input type="text" class="form-control col-12 mb-2 rounded-pill " id="referenciaMod" name="referenciaMod" placeholder="Referencia" />
+							<input type="text" class="form-control col-12 mb-2 rounded-pill " id="nombreMod" name="nombreMod" placeholder="Nombre" />
+							<input type="text" class="form-control col-12 mb-2 rounded-pill " id="costeMod" name="costeMod" placeholder="Precio de coste" />
+							<input type="text" class="form-control col-12 mb-2 rounded-pill " id="stockMod" name="stockMod" placeholder="Cantidad" />
+
+							<button class="btn btn-primary col-12 mb-2 rounded-pill" type="button" id="enviarMod">Enviar</button>
+
+						</div>
+					</form>
+
+					<!--Alta de producto-->
+					<form id="formulario_alta">
+						<div id ="bloqueAlta" class="row">
+							<p class="fs-5">Rellena los siguientes datos para un alta de producto nueva: </p>
+							<input type="text" class="form-control col-12 mb-2 rounded-pill " id="referenciaAlta" name="referenciaAlta" placeholder="Referencia" />
+							<input type="text" class="form-control col-12 mb-2 rounded-pill " id="farmaAlta" name="farmaAlta" placeholder="Farmacéutica" />
+							<input type="text" class="form-control col-12 mb-2 rounded-pill " id="nombreAlta" name="nombreAlta" placeholder="Nombre" />
+							<input type="text" class="form-control col-12 mb-2 rounded-pill " id="costeAlta" name="costeAlta" placeholder="Precio de coste" />
+							<input type="text" class="form-control col-12 mb-2 rounded-pill " id="ventaAlta" name="ventaAlta" placeholder="Precio de venta" />
+							<input type="text" class="form-control col-12 mb-2 rounded-pill " id="stockAlta" name="stockAlta" placeholder="Cantidad" />
+
+							<button class="btn btn-primary col-12 mb-2 rounded-pill" type="button" id="enviarAlta">Enviar</button>
+
+						</div>
+					</form>
+
+					<!--Bloque Opciones-->
+					<div class="row">
+						<p id="bienvenida" class="fs-5"></p>
+					</div>
+					<div id ="bloqueOpciones" class="row">
+						<button class="btn btn-primary col-12 mb-2 rounded-pill" type="button" id="ventas">Ventas</button>
+						<button class="btn btn-primary col-12 mb-2 rounded-pill" type="button" id="compras">Compras</button>
+						<button class="btn btn-primary col-12 mb-2 rounded-pill" type="button" id="pedidos">Pedidos</button>
+						<button class="btn btn-danger mt-4 col-12 mb-2 rounded-pill" type="button" id="salir">Salir</button>
+					</div>
+					
+					<!--Tabla pedidos-->
+					<div id="apartadoPedidos" class="row">
+						<h5 class="mb-5">Productos con stock de 5 o menos:</h5>
+						<div id ="tablaPedidos"></div>
+					</div>
+					<!--Botón volver-->
+					<div class="row">
+						<button class="btn btn-warning rounded-pill mb-2" type="button" id="volverpasoanterior">Volver al paso anterior</button>
+					</div>
+					<div class="row">
+						<button class="btn btn-success rounded-pill" type="button" id="volver">Volver a Opciones</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<!--Mi script-->
+		<script src="script.js" language="javascript" type="text/javascript"></script>	
+	</body>
+	</html>

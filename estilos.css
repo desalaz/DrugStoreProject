@@ -1,0 +1,16 @@
+label.error{
+	color: red;
+}
+
+input.error{
+	color: red;
+	border: 1px solid red;
+}
+
+#errorUsuario, #bloqueVentas, #bloqueCompras, #bloqueAlta, #bloqueOpciones, #apartadoPedidos, #volver, #volverpasoanterior, #bloqueMod{
+	display: none;
+}
+
+
+
+
