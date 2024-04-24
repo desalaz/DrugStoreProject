@@ -6,17 +6,17 @@ It´s a web page that simulates the operation of the sale of some medicines, upd
 - :mag: Verification of the stock of medicines having less than 5 units.
 - :exclamation: Purchase of medicines.
 
-Datos para acceder a la pagina y hacer pruebas:  
-identificador: 60758487P   
-nombre: Pepa 
+_Datos para acceder a la pagina y hacer pruebas_:  
+***identificador***: 60758487P   
+***nombre***: Pepa 
 
-identificador: 78933215K  
-nombre: Sandra  
+***identificador***: 78933215K  
+***nombre***: Sandra  
 
-Referencia de los medicamentos:  
-abcd12345678 Ibuprofeno 9.99 precio coste    
-abcd87654321 Megalevure 8.50 precio coste   
-efgh12345678 Paracetamol 9.50 precio coste  
+_Referencia de los medicamentos_:  
+**abcd12345678** _Ibuprofeno_  9.99 precio coste    
+**abcd87654321** _Megalevure_  8.50 precio coste   
+**efgh12345678** _Paracetamol_  9.50 precio coste  
 
 ## Contribution
 We are open to contributions! If you wish to contribute, please follow the contribution guidelines.
